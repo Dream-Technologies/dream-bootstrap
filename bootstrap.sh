@@ -165,7 +165,7 @@ for repo in "${repos[@]}"; do
   fi
   printf 'Ready: %s\n' "$destination"
   if [ -f "$destination/setup.sh" ]; then
-    printf 'When ready for the development environment, run:\n  cd %q && ./setup.sh\n' "$destination"
+    printf 'Open a new Terminal window (Command+N) to load Homebrew, then run:\n  cd %q && ./setup.sh\n' "$destination"
   fi
 done
 printf '\nBootstrap complete. Repository setup remains your next step.\n'
